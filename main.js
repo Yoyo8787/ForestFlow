@@ -152,7 +152,9 @@ let nextpage = (add) => {
 
 let openintro = (e) => {
 	if (e.classList.contains("active")) {
-		e.classList.remove("active");
+		setTimeout(function () {
+			e.classList.remove("active");
+		}, 500);
 		let txt = e.firstElementChild;
 		txt.classList.add("hidden");
 	} else {

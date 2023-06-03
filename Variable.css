@@ -150,14 +150,14 @@ body {
 	padding: 0.25rem;
 }
 .intro-card:hover {
+	transition: all 0.5s ease;
 	color: var(--backgroundcolor);
 	background-color: var(--primarycolor);
 	cursor: pointer;
-	transition: all 0.5s ease;
 	transform: scale(1.1);
 }
 .intro-card.active {
-	transition: none;
+	transition: position 0.5s ease;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -169,15 +169,22 @@ body {
 .toggle {
 	width: 40rem;
 	max-width: 90vw;
+	height: 20rem;
 	color: var(--fontcolor);
 	background-color: var(--backgroundcolor);
-	padding: 4rem;
+	padding: 2rem;
+	transition: width ease 0.5s, height ease 0.5s;
+	overflow: hidden;
+}
+@media (max-width: 425px) {
+	.toggle {
+		height: 30rem;
+	}
 }
 .toggle.hidden {
 	padding: 0;
 	width: 0;
 	height: 0;
-	overflow: hidden;
 }
 
 #projectcards {
