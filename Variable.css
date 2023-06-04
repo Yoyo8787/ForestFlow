@@ -151,7 +151,7 @@ body {
 }
 .intro-card:hover {
 	transition: all 0.5s ease;
-	color: var(--backgroundcolor);
+	color: var(--secondarycolor);
 	background-color: var(--primarycolor);
 	cursor: pointer;
 	transform: scale(1.1);
@@ -162,7 +162,7 @@ body {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color: var(--backgroundcolor);
+	color: var(--secondarycolor);
 	background-color: var(--primarycolor);
 	z-index: 2;
 }
@@ -173,7 +173,7 @@ body {
 	color: var(--fontcolor);
 	background-color: var(--backgroundcolor);
 	padding: 2rem;
-	transition: width ease 0.5s, height ease 0.5s;
+	transition: width ease 1s, height ease 1s;
 	overflow: hidden;
 }
 @media (max-width: 425px) {

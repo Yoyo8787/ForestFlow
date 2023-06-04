@@ -2,18 +2,18 @@ let changemode = (mode) => {
 	if (mode != "dark") {
 		document.body.style.cssText = `
                     --alarmcolor: #CB4042;
-                    --primarycolor: #266396;
-                    --secondarycolor: #6098BA;
-                    --backgroundcolor: #FFFFFB;
-                    --fontcolor: #182F4B;
+                    --primarycolor:#1f0d00;
+                    --secondarycolor: #CA7A2C;
+                    --backgroundcolor: #f7912b;
+                    --fontcolor: #000000;
                 `;
 	} else {
 		document.body.style.cssText = `
                     --alarmcolor: #CB4042;
-                    --primarycolor: #6098BA;
-                    --secondarycolor: #266396;
-                    --backgroundcolor: #0C0C0C;
-                    --fontcolor: #C9D8E6;
+                    --primarycolor: #FFB11B;
+                    --secondarycolor: #1C1C1C;
+                    --backgroundcolor: #1C1C1C;
+                    --fontcolor: #FCFAF2;
                 `;
 	}
 };
@@ -154,7 +154,7 @@ let openintro = (e) => {
 	if (e.classList.contains("active")) {
 		setTimeout(function () {
 			e.classList.remove("active");
-		}, 500);
+		}, 1000);
 		let txt = e.firstElementChild;
 		txt.classList.add("hidden");
 	} else {
